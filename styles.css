@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 48px 24px;
   display: grid;
@@ -25,7 +25,7 @@ body {
 }
 
 .title {
-  font-size: clamp(28px, 6vw, 64px);
+  font-size: clamp(20px, 6vw, 64px);
   font-weight: 800;
   letter-spacing: 0.02em;
   margin: 0 0 16px 0;
@@ -37,16 +37,23 @@ body {
   margin: 8px 0 16px 0;
 }
 
-.intro p { color: var(--text); opacity: 0.9; }
-.intro .links { display: flex; gap: 16px; margin: 20px 0 8px; }
+.subtitle {
+  font-size: clamp(16px, 2.4vw, 28px);
+  font-weight: 700;
+  color: var(--muted);
+  margin: 0 0 20px 0;
+}
+
+.intro p { color: var(--text); opacity: 0.9; max-width: 65ch; }
+.intro .links { display: flex; gap: 16px; margin: 28px 0 12px; }
 .intro .icon { display: inline-flex; }
-.intro .icon:hover { opacity: 0.85; }
-.email { color: var(--muted); text-decoration: none; }
+.intro .icon:hover { opacity: 0.85; transform: translateY(-1px); }
+.email { color: var(--muted); text-decoration: none; margin-top: 8px; display: inline-block; }
 .email:hover { text-decoration: underline; }
 
 .photo-wrap { display: flex; justify-content: center; }
 .photo {
-  width: 100%;
+  width: 80%;
   max-width: 360px;
   border-radius: 50% / 40%;
   display: block;
