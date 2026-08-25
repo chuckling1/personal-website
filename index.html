@@ -3,27 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Charlie Davis | Software Engineer | AI Enthusiast</title>
+    <title>Charlie Davis | Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="container">
-      <section class="intro">
-        <h1 class="title">Charlie Davis</h1>
-        <h2 class="subtitle">Software Engineer | AI Enthusiast</h2>
-        <h2 class="hello">Hi, I’m Charlie.</h2>
-        <p>
-          My engineering philosophy is built on a fundamental principle: time is the most valuable, non-renewable asset in any business. This idea has driven my career, from optimizing legacy database processes to architecting fully automated testing suites that reduce multi-day efforts to a single night.
-        </p>
-        <p>
-          I operate from first principles, systematically breaking down complex problems to their core requirements. My approach is to identify and eliminate friction. Whether it’s redundant code, an inefficient workflow, or a clunky UI, I see it as an opportunity to add tangible value. I believe in pragmatism; when an idea is sound but controversial, I build a lean proof-of-concept to demonstrate its viability rather than engage in theoretical debate. This focus on building better systems is why I follow a simple rule: leave all code better than you found it.
-        </p>
-        <p>
-          With deep expertise in C# and TypeScript, I specialize in architecting and implementing robust solutions that enhance performance and productivity. I am currently seeking a role where I can apply my systematic approach to new challenges, particularly in the growing field of AI, to build software that is not only powerful but also fundamentally efficient.
-        </p>
+    <main class="page">
+      <div class="hero">
+        <section class="intro">
+          <h1 class="title">Charlie Davis</h1>
+          <p class="subtitle">Software Engineer (C#, TypeScript) · Building Chorus Tools</p>
+          <h2 class="hello">Hi, I’m Charlie.</h2>
+          <p>
+            My engineering philosophy is built on a fundamental principle: time is the most valuable, non-renewable asset in any business. This idea has driven my career, from optimizing legacy database processes to architecting fully automated testing suites that reduce multi-day efforts to a single night.
+          </p>
+        </section>
+
+        <aside class="photo-wrap">
+          <img src="assets/profile.jpg" alt="Charlie Davis" class="photo" />
+        </aside>
+      </div>
+
+      <section class="project" aria-label="Chorus Tools">
+        <a class="project-thumb-link" href="https://www.chorus-tools.com/" target="_blank" rel="noopener noreferrer">
+          <img
+            class="project-thumb"
+            src="assets/chorus-tools-riser.png"
+            alt="Chorus Tools riser canvas"
+            width="720"
+            height="720"
+          />
+        </a>
+        <div class="project-copy">
+          <p class="project-label">Private alpha · seating software for choruses</p>
+          <h2 class="project-title">
+            <a href="https://www.chorus-tools.com/" target="_blank" rel="noopener noreferrer">Chorus Tools</a>
+          </h2>
+          <p>
+            A live riser canvas for community and professional choruses. Directors seat the choir, print a chart for rehearsal, and share a link so singers can find their spot. Directors and helpers log in; singers are names on the roster, not accounts.
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
         <div class="links">
           <a class="icon" href="https://github.com/chuckling1" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="#e5e7eb" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 10 8.2 11.6.6.1.8-.3.8-.6v-2c-3.3.8-4-1.6-4-1.6-.6-1.5-1.4-1.9-1.4-1.9-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.2 1.8 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.4-1.4-5.4-6.1 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.3 11.3 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.9 1.2 1.9 1.2 3.2 0 4.7-2.8 5.8-5.4 6.1.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A12.2 12.2 0 0 0 24 12.7 12 12 0 0 0 12 .5Z"/></svg>
@@ -33,13 +57,7 @@
           </a>
         </div>
         <a class="email" href="mailto:via.charlie.davis@gmail.com">via.charlie.davis@gmail.com</a>
-      </section>
-
-      <aside class="photo-wrap">
-        <img src="assets/profile.jpg" alt="Charlie Davis" class="photo" />
-      </aside>
+      </footer>
     </main>
   </body>
-  </html>
-
-
+</html>
