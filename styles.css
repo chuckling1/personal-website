@@ -68,22 +68,13 @@ body {
   padding-top: 40px;
   border-top: 1px solid var(--rule);
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
-  align-items: start;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.4fr);
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
 }
 
-.project-thumb-link {
-  display: block;
-  line-height: 0;
-}
-
-.project-thumb {
-  width: 100%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 12px;
-  display: block;
+.project-copy {
+  max-width: 42ch;
 }
 
 .project-label {
@@ -110,8 +101,18 @@ body {
 .project-copy p:not(.project-label) {
   color: var(--text);
   opacity: 0.9;
-  max-width: 62ch;
   margin: 0;
+}
+
+.project-media {
+  display: block;
+  line-height: 0;
+}
+
+.project-shot {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .footer {
@@ -149,9 +150,10 @@ body {
   .photo { max-width: 300px; margin: 0 auto; }
   .project {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 28px;
+    align-items: start;
   }
-  .project-thumb {
-    max-width: 280px;
+  .project-copy {
+    max-width: none;
   }
 }
